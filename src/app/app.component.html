@@ -4,7 +4,7 @@
 value1 : <input value="" [(ngModel)]='myvalue1' type="text">
 value2 : <input value="" [(ngModel)]='myvalue2' type="text">
 <br/>
-<button type="button" [disabled]='istrue' (click)='add()'>add</button>
+<button type="button" [disabled]='istrue()' (click)='add()'>add</button>
 <br/>
 
 <div *ngIf='checkresult()'>

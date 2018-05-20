@@ -8,12 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  myvalue1:number;
-  myvalue2:number;
-  istrue:boolean = false;
+  myvalue1;
+  myvalue2;
+  // istrue:boolean = false;
   result;
   
-  
+  istrue(){
+    if(this.myvalue1==null || this.myvalue2==null)
+    return true
+    else
+    return false
+  }
+
 add(){
 this.result=(+this.myvalue1) + (+this.myvalue2);
 
