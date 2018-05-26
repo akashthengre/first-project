@@ -1,3 +1,19 @@
 <h1>i am in component</h1>
 {{title}}
 
+<app-myfirstcomponent></app-myfirstcomponent>
+<br/>
+<br/>
+
+<!-- calling array with index -->
+ <!-- <p *ngFor="let days of weekdays;let i=index">
+    {{i+1}} Day : <span style="color:red;">{{days}}</span>
+</p> -->
+
+<div *ngFor="let bulb of bulbs;let i=index">
+<div>
+    <img class="img-left" src="{{x[i]}}" alt="">
+    <input type="button" class="img-left" (click)='switch(i)' value="{{y[i]}}">
+</div>
+</div>
+<div class="clear-bt"></div>
