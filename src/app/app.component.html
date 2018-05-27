@@ -1,3 +1,20 @@
 <h1>i am in component</h1>
 {{title}}
 
+<p [style.color]="'blue'">line 1 [style.color]</p>
+
+<p [ngStyle]="getconfig">line 2 [ngStyle] variable</p>
+<p [ngStyle]="getconfig1()">line 2 [ngStyle] function</p>
+
+
+
+<p [class.myline3]='true'>line 3 [class.myline3]</p>
+
+<p [ngClass]="getclass">line 4 [ngClass]</p>
+<p [ngClass]="getclass1()">line 4 [ngClass] function</p>
+
+<p *ngFor="let p of printbooks">{{p}}</p>
+
+<input type="text" [(ngModel)]='pushadd'> <button type="button"  (click)='addpus()'>Add</button>
+<button type="button"  (click)='display()'>Display</button>
+
