@@ -11,6 +11,6 @@ export class PersonComponent implements OnInit {
 
   ngOnInit() {
   }
-name='Akash';
-age=23;
+name = 'Akash';
+age = 23;
 }

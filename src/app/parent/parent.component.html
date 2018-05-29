@@ -1,7 +1,6 @@
-<p>
-  parent works!
-</p>
+
 <app-person #refperson></app-person>
-Name : {{refperson.name}}
-Age : {{refperson.age}}
-Address : {{refperson.street}},{{refperson.landmark}}.{{refperson.pincode}}ng serve
+<app-address #refaddress></app-address>
+Name : {{refperson.name}}<br>
+Age : {{refperson.age}}<br>
+Address : {{refaddress.street}},{{refaddress.landmark}},{{refaddress.pincode}}
