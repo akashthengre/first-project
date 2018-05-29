@@ -1,0 +1,19 @@
+<div style="background-color:red !important;">
+<p>
+  parent works!
+</p>
+<app-child #refchild></app-child>
+Child Count : {{refchild.childcount}} I am in Parant<br><br><br><button (click)="refchild.iamchildmethod()">call child method</button>
+<br>
+<br>
+app-child-input display:
+<app-child-input [nameofparent]='parentelement' [secondnameofparent]='parentelement1' #refchildinput></app-child-input>
+app-child-input : {{refchildinput.nameofparent}}<br><br>
+app-child-input 1 : {{refchildinput.secondnameofparent}}<br><br>
+
+app-child-output display:<br>
+<app-childoutput (changechild)='parentmethod($event)'></app-childoutput>
+
+
+
+</div>

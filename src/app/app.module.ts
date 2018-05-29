@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ChildInputComponent } from './child-input/child-input.component';
+import { ChildoutputComponent } from './childoutput/childoutput.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParentComponent,
+    ChildComponent,
+    ChildInputComponent,
+    ChildoutputComponent
   ],
   imports: [
     BrowserModule,FormsModule
