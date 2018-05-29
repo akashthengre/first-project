@@ -11,5 +11,7 @@ export class AddressComponent implements OnInit {
 
   ngOnInit() {
   }
-
+street='near police station';
+landmark='pawan sweets';
+pincode=441206;
 }
