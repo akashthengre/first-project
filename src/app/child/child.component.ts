@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -17,6 +19,15 @@ export class ChildComponent implements OnInit {
   }
 
     y=setInterval(()=>{this.counter++},1000)
+
+    displayCount(){
+      this.parentcount.emit(this.counter);
+    }
+
+    @Output() parentcount = new EventEmitter();
+
+  
+    
     
 x ;
 }
