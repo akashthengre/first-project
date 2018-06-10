@@ -9,6 +9,6 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,SharedModule
   ],
   declarations: [F1c1Component, F1c2Component],
-  exports : [F1c1Component, F1c2Component]
+  exports : [F1c1Component, SharedModule]
 })
 export class Feature1Module { }
