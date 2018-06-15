@@ -3,17 +3,30 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { ParentComponent } from './parent/parent.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { DefaultComponent } from './default/default.component';
+import { ApproutingComponent } from './approuting/approuting.component';
+import { ApproutingModule } from './approuting/approuting.module';
+import { ContactcontentComponent } from './contact/contactcontent/contactcontent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
-    ParentComponent
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent,
+    DefaultComponent,
+    ApproutingComponent,
+    ContactcontentComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,ApproutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

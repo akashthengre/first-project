@@ -1,0 +1,10 @@
+.contact-menu {
+    width: 150px;
+    float: left;
+    border-right: 1px solid #000;
+}
+
+.contact-content {
+    float: left;
+    padding: 10px;
+}
