@@ -3,17 +3,20 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { Feature3Module } from './feature3/feature3.module';
-import { Feature1Module } from './feature1/feature1.module';
-import { Feature2Module } from './feature2/feature2.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule,FormsModule,Feature1Module,Feature2Module,Feature3Module,AppRoutingModule
+    BrowserModule,FormsModule,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
