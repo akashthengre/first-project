@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { Feature3Module } from './feature3/feature3.module';
 import { Feature1Module } from './feature1/feature1.module';
 import { Feature2Module } from './feature2/feature2.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,Feature1Module,Feature2Module,Feature3Module
+    BrowserModule,FormsModule,Feature1Module,Feature2Module,Feature3Module,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
