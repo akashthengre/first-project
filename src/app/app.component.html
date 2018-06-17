@@ -1,3 +1,5 @@
-<h1>i am in component</h1>
-{{title}}
+<button (click)='showData();show=true'>show data</button>
+<button (click)='setData();show=true'>post data</button>
+
+<p *ngIf='show'>{{data|json}}</p>
 
