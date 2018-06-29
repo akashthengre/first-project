@@ -11,6 +11,8 @@ import { AboutusFooterComponent } from './aboutus/aboutus-footer/aboutus-footer.
 import { ContactComponent } from './contact/contact.component';
 import { ContactHeaderComponent } from './contact/contact-header/contact-header.component';
 import { ContactFooterComponent } from './contact/contact-footer/contact-footer.component';
+import { RoutingModule } from './routing.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ContactFooterComponent } from './contact/contact-footer/contact-footer.
     AboutusFooterComponent,
     ContactComponent,
     ContactHeaderComponent,
-    ContactFooterComponent
+    ContactFooterComponent,
+    RoutingModule,
+    HomeModule
   ],
   imports: [
     BrowserModule,FormsModule
