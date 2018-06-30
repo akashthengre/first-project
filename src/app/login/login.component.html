@@ -1,0 +1,25 @@
+<div [hidden]='submitted'>
+  <h1>Login Form</h1>
+
+  <form #myform="ngForm" (ngSubmite)="onSubmit()">
+    <div>
+      <label>Name</label>
+      <input type="text" id="name" required [(ngModel)]="login.name" #refname="ngModel">
+
+    </div>
+    <div [hidden]="refname.valid || refname.pristine">
+      name is required
+    </div>
+    <div>
+      <label>Password</label>
+      <input type="password" required [(ngModel)]="login.password" id="password" #refpassword='ngModel'>
+    </div>
+    <div [hidden]="refpassword.valid || refpassword.pristine">
+      password is required
+    </div>
+    <button type="submit" [disabled]="!myForm.form.valid">submit</button>
+
+  </form>
+
+
+</div>
