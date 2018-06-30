@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HomeFooterComponent } from './home/home-footer/home-footer.component';
-import { HomeHeaderComponent } from './home/home-header/home-header.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AboutusHeaderComponent } from './aboutus/aboutus-header/aboutus-header.component';
 import { AboutusFooterComponent } from './aboutus/aboutus-footer/aboutus-footer.component';
@@ -17,20 +15,18 @@ import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeFooterComponent,
-    HomeHeaderComponent,
+    
     HomeComponent,
     AboutusComponent,
     AboutusHeaderComponent,
     AboutusFooterComponent,
     ContactComponent,
     ContactHeaderComponent,
-    ContactFooterComponent,
-    RoutingModule,
-    HomeModule
+    ContactFooterComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    HomeModule,
+    BrowserModule,FormsModule,RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
