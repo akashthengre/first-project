@@ -12,4 +12,10 @@ export class C1Component implements OnInit {
   ngOnInit() {
   }
 
+  contactNumber = '';
+
+  getContacts(){
+    return 
+  }
+  
 }

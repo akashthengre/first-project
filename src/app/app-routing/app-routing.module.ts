@@ -5,13 +5,18 @@ import { C3Component } from '../c3/c3.component';
 import { C2Component } from '../c2/c2.component';
 import { DefaultComponent } from '../default/default.component';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
+import { EmptyContactService } from '../empty-contact.service';
 
 //step2
 const routes : Routes = [
-  {path:'c1',component:C1Component},
+  {path:'',component:DefaultComponent},
   {path:'c2',component:C2Component},
   {path:'c3',component:C3Component},
-  {path:'',component:DefaultComponent},
+ 
+  {path:'c1',
+  component:C1Component,
+  canDeactivate:[EmptyContactService]
+  },
   {path:'**',component:PagenotfoundComponent} 
 ];
 

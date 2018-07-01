@@ -9,6 +9,7 @@ import { C3Component } from './c3/c3.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DefaultComponent } from './default/default.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { EmptyContactGuard } from './empty-contact.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
   imports: [
     BrowserModule,FormsModule,AppRoutingModule
   ],
-  providers: [],
+  providers: [EmptyContactGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
