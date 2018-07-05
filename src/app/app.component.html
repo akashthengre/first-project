@@ -1,5 +1,11 @@
-<h1>i am in component</h1>
-{{title}}
-
-<router-outlet></router-outlet>
-
+<div class="main-page">
+    <div class="head">
+        <app-main-header></app-main-header>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="foot">
+        <app-main-footer></app-main-footer>
+    </div>
+</div>

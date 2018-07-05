@@ -11,6 +11,8 @@ import { ContactHeaderComponent } from './contact/contact-header/contact-header.
 import { ContactFooterComponent } from './contact/contact-footer/contact-footer.component';
 import { RoutingModule } from './routing.module';
 import { HomeModule } from './home/home.module';
+import { MainHeaderComponent } from './main-header/main-header.component';
+import { MainFooterComponent } from './main-footer/main-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeModule } from './home/home.module';
     AboutusFooterComponent,
     ContactComponent,
     ContactHeaderComponent,
-    ContactFooterComponent
+    ContactFooterComponent,
+    MainHeaderComponent,
+    MainFooterComponent
   ],
   imports: [
     HomeModule,

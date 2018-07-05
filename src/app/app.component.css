@@ -1,2 +1,28 @@
 .red{color: red;}
 input{color: blue;background-color: yellow;}
+
+.red{color: red;}
+input{color: blue;background-color: yellow;}
+
+.abc {
+    color:red;
+}
+.head ul li {
+    display: inline;
+    text-align: center;   
+    margin-right: 20px;
+}
+.main-page {
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.main {
+    padding-left: 10px;
+}
+
+
+.head {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
