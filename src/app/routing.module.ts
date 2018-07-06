@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import{Routes,RouterModule} from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactComponent } from './contact/contact.component';
 
-const routes:Routes=[];
+const routes:Routes=[
+  {path : 'home' , component : HomeComponent},
+  {path : 'about' , component : AboutusComponent},
+  {path : 'contact' , component : ContactComponent},
+  {path : '' , component : HomeComponent},
+];
 
 @NgModule({
   imports: [
